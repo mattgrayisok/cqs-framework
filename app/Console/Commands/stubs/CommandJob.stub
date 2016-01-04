@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Jobs\Commands{{namespace}};
+
+use App\Jobs\Commands\BaseCommand;
+use Illuminate\Queue\SerializesModels;
+{{async1}}
+
+/**
+ * Class {{classname}}
+ * @package App\Jobs\Commands{{namespace}}
+ */
+class {{classname}} extends BaseCommand {{async2}}{
+
+    {{async3}}
+
+    protected $log = true;
+    protected $transact = false;
+
+    //Define command properties here
+{{prop1}}
+
+    public function __construct( {{prop2}} )
+    {
+
+{{prop3}}
+
+    }
+
+}

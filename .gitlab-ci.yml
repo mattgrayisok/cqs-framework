@@ -1,0 +1,32 @@
+before_script:
+  - buildscripts/provision.sh
+
+variables:
+  MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+  MYSQL_DATABASE: 'lanyardfm'
+
+stages:
+  - test
+  - deploy
+
+core:
+  stage: test
+  script:
+    - buildscripts/build.sh
+    - buildscripts/test.sh
+
+deploy-staging:
+  stage: deploy
+  script:
+    - buildscripts/build.sh
+    - buildscripts/deploy-staging.sh
+  only:
+    - master
+
+deploy-production:
+  stage: deploy
+  script:
+    - buildscripts/build.sh
+    - buildscripts/deploy-production.sh
+  only:
+    - production

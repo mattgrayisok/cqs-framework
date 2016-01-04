@@ -1,0 +1,19 @@
+<?php
+
+namespace App\PipeHandlers\Validators\Commands{{namespace}};
+
+use App\Jobs\Commands\BaseCommand;
+use App\Exceptions\ValidationException;
+use App\PipeHandlers\BaseValidator;
+
+class {{classname}}Validator extends BaseValidator{
+
+    public function validate(BaseCommand $command){
+
+        $this->baseValidate($command, [
+{{prop1}}
+        ]);
+
+    }
+
+}

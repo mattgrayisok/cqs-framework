@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Handlers\Queries{{namespace}};
+
+use App\Jobs\Queries{{namespace}}\{{classname}};
+
+class {{classname}}Handler {
+
+    public function handle({{classname}} $query)
+    {
+
+        //Do work here
+
+    }
+
+}

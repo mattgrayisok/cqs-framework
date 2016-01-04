@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Handlers\Commands{{namespace}};
+
+use App\Jobs\Commands{{namespace}}\{{classname}};
+
+class {{classname}}Handler {
+
+    public function handle({{classname}} $command)
+    {
+
+        //Do work here
+
+    }
+
+}

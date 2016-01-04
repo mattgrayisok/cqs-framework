@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Jobs\Queries{{namespace}};
+
+use App\Jobs\Queries\BaseQuery;
+
+class {{classname}} extends BaseQuery{
+
+	protected $cache = true;
+	protected $cacheTime = 5;
+	protected $cacheTags = [];
+
+    //Define properties here
+{{prop1}}
+
+	public function __construct( {{prop2}} )
+	{
+
+{{prop3}}
+
+	}
+
+}

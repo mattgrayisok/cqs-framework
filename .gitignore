@@ -1,0 +1,16 @@
+/vendor
+/node_modules
+Homestead.yaml
+.env*
+.idea
+public_html
+npm-debug.log
+public/build
+public/css
+public/js
+storage/testing_instance.sqlite
+storage/testing_stub.sqlite
+._*
+tests/_output
+tests/_support/_generated
+storage/geolite2city.mmdb

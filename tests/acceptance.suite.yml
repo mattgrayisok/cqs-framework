@@ -1,0 +1,26 @@
+# Codeception Test Suite Configuration
+
+# suite for acceptance tests.
+# perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+class_name: AcceptanceTester
+modules:
+    enabled:
+        - Laravel5
+        - WebDriver
+        - AcceptanceHelper
+    config:
+        WebDriver:
+            # Staging server for acceptance testing?
+            # Won't allow database analysis
+            url: 'http://somedomain.com/'
+            host: 'hub.browserstack.com'
+            port: 80
+            browser: chrome
+            capabilities:
+                'browserstack.user': ''
+                'browserstack.key' : ''
+                #'browserVersion': '40.0'
+                'browserstack.debug': 'false'
+                'browserstack.local': 'true'
